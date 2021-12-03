@@ -1,0 +1,30 @@
+person:
+  name: tasty${random.uuid}
+  age: ${random.int}
+  sex: man
+  data: 2021/01/01
+  maps: {k1: v1,k2: v2}
+  ishappy: true
+  list:
+    - code
+    - girl
+    - music
+  dog:
+    name: ${person.hello:other}_旺财
+    age: 2
+
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8082
+spring:
+  profiles:dev
+
+---
+server:
+  port: 8083
+spring:
+  profiles:test
+

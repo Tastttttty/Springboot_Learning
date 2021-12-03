@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.tasty.pojo.Person",
+      "sourceType": "com.tasty.pojo.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.date",
+      "type": "java.util.Date",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.tasty.pojo.Dog",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.ishappy",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.list",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.tasty.pojo.Person"
+    },
+    {
+      "name": "person.sex",
+      "type": "java.lang.String",
+      "sourceType": "com.tasty.pojo.Person"
+    }
+  ],
+  "hints": []
+}

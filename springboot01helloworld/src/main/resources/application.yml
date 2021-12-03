@@ -1,0 +1,35 @@
+#在yml文件里面实例化对象，相比于@value优先使用yml方法
+person:
+  name: tasty${random.uuid}
+  age: ${random.int}
+  sex: man
+  data: 2021/01/01
+  maps: {k1: v1,k2: v2}
+  ishappy: true
+  list:
+    - code
+    - girl
+    - music
+  dog:
+    name: ${person.hello:other}_旺财
+    age: 2
+
+
+#通过yml多环境配置
+spring:
+  profiles:
+#    通过别名激活配置环境
+    active: prod
+---
+server:
+  port: 8082
+spring:
+#  给此环境起别名为dev
+  profiles:dev
+
+---
+server:
+  port: 8083
+spring:
+  profiles:test
+
